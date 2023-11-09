@@ -7,8 +7,16 @@
 </head>
 <body>
     <h1>This is About Page</h1>
-    Results is: 
-    {{result.result}}
+
+    {% for d in data %}
+        <!-- {{d}} -->
+        <br>
+        {% for k in d %}
+            {{d[k]}}
+        
+        {% endfor %}
+
+    {% endfor %}
 
     </form>
 </body>
